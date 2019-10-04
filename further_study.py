@@ -60,8 +60,7 @@ def custom_append(input_list, value):
         True
 
     """
-
-    pass
+    input_list += [value]
 
 
 def custom_extend(input_list, second_list):
@@ -79,8 +78,7 @@ def custom_extend(input_list, second_list):
         True
 
     """
-
-    pass
+    input_list.extend(second_list)
 
 
 def custom_insert(input_list, index, value):
@@ -97,6 +95,10 @@ def custom_insert(input_list, index, value):
         True
 
     """
+    # input_list = input_list[:int(index)].append(value).extend(input_list[int(index):])
+
+
+   
 
     pass
 
@@ -117,7 +119,6 @@ def custom_remove(input_list, value):
 
     """
 
-    pass
 
 
 def custom_pop(input_list):
